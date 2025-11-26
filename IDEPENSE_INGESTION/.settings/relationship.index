@@ -1,0 +1,100 @@
+[ {
+  "baseItem" : {
+    "id" : "_4t8loMriEfCGXqdVZZWoTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_VMyk0MrjEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg - CATEGORIE_DEPENSE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_4zaMEMrwEfCGXqdVZZWoTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_VMyk0MrjEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg - SOUS_CATEGORIE_DEPENSE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_7G21YMrwEfCGXqdVZZWoTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_VMyk0MrjEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg - DEPENSE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_86QQMMrxEfCGXqdVZZWoTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "IDEPENSE_INGESTION:_4zaMEMrwEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "IDEPENSE_INGESTION:_7G21YMrwEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "IDEPENSE_INGESTION:_m3NsQMrwEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_m3NsQMrwEfCGXqdVZZWoTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_VMyk0MrjEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_tmdwUMrhEfCGXqdVZZWoTg - CATEGORIE_DEPENSE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
