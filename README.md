@@ -86,6 +86,6 @@ The pipeline goes beyond simple mapping by injecting Java logic for data transfo
 * **Data Enrichment:** Complex mapping in `tMap` to handle Lookups between the Staging Area (ODS) and Dimensions.
 
 ### 3. Analytics (Power BI)
-The dashboard leverages the underlying star schema to allow:
-* **Decomposition Analysis:** Using Decomposition Trees to break down spending from Macro-Categories (e.g., "Home") to specific transaction IDs (`SK_DEPENSE`).
+The dashboard leverages the star schema to allow:
+* **Decomposition Analysis:** Using Decomposition Trees to break down spending from Macro-Categories (e.g., "Fixed Expenses") down to specific **expense descriptions** (e.g., "Paiement Loyer").
 * **Temporal Drilling:** Full drill-down capability from Yearly aggregates down to daily transaction granularity.
