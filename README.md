@@ -27,12 +27,7 @@ This repository hosts an end-to-end data pipeline designed to ingest personal ex
 
 ### Dashboard Overview
 ![Home Page](assets/PowerBI/home.png)
-
-### Key Insights
-* **Drill-down capability:** From Macro-categories (Home, Food) to single transaction lines.
-* **Temporal Analysis:** Monthly trends and Quarter-over-Quarter comparison.
-
-## Implementation Details
+![Overview](assets/PowerBI/overview.png)
 
 ### Entity-Relationship Diagram (ERD)
 
@@ -72,6 +67,8 @@ erDiagram
     DIM_SOUS_CATEGORIE_DEPENSE ||--o{ FAIT_DEPENSE : "categorized as"
     DIM_DESCRIPTION_DEPENSE ||--o{ FAIT_DEPENSE : "described as"
 ```
+
+## Implementation Details
 
 ### 1. Data Modeling (Snowflake)
 The database schema uses a **Star Schema** optimized for analytics.
