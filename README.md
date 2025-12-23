@@ -36,3 +36,12 @@ This repository hosts an end-to-end data pipeline designed to ingest personal ex
 * `jCategorie_FILE_ODS`: Master data ingestion for categories.
 * `jDepense_FILE_ODS`: Incremental loading of expense transactions.
 * `jFaitDepense_ODS_DWH`: Populating the Fact Table.
+
+### 1. Data Modeling (Snowflake)
+The database schema uses a **Star Schema** optimized for analytics.
+* **Source Code:** [View SQL DDL Script](./sql/init_warehouse.sql)
+* **Fact Table:** `FAIT_DEPENSE` connects transactions to dimensions via surrogate keys.
+* **Dimensions:**
+    * `DIM_TEMPS`: Custom Calendar table with quarters and semesters (`lib_quater`, `lib_semester`).
+    * `DIM_SOUS_CATEGORIE_DEPENSE`: Denormalized dimension containing both Category and Sub-Category logic.
+    * `DIM_DESCRIPTION_DEPENSE`: Isolates transaction descriptions to reduce redundancy.
