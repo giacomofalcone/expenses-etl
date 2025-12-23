@@ -26,7 +26,7 @@ This repository hosts an end-to-end data pipeline designed to ingest personal ex
 ## Visual Output (Power BI)
 
 ### Dashboard Overview
-![Overview](assets/PowerBI/home.png))*
+![Home Page](assets/PowerBI/home.png)
 
 ### Key Insights
 * **Drill-down capability:** From Macro-categories (Home, Food) to single transaction lines.
