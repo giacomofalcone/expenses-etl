@@ -87,5 +87,5 @@ The pipeline goes beyond simple mapping by injecting Java logic for data transfo
 
 ### 3. Analytics (Power BI)
 The dashboard leverages the star schema to allow:
-* **Decomposition Analysis:** Using Decomposition Trees to break down spending from Macro-Categories (e.g., "Fixed Expenses") down to specific **expense descriptions** (e.g., "Paiement Loyer").
+* **Decomposition Analysis:** Using Decomposition Trees to break down spending from Macro-Categories (e.g., "Fixed Expenses") down to specific expense descriptions (e.g., "Paiement Loyer").
 * **Temporal Drilling:** Full drill-down capability from Yearly aggregates down to daily transaction granularity.
