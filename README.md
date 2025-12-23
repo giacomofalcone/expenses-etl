@@ -1,6 +1,6 @@
 # Expense Tracking ETL Pipeline
 
-**Project Type:** Data Engineering Lab / Showcase
+**Project Type:** Data Engineering Lab / Showcase  
 **Tech Stack:** Talend Open Studio, Snowflake, Power BI, SQL.
 
 ## Overview
