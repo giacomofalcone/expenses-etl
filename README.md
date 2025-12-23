@@ -33,9 +33,44 @@ This repository hosts an end-to-end data pipeline designed to ingest personal ex
 * **Temporal Analysis:** Monthly trends and Quarter-over-Quarter comparison.
 
 ## Key Technical Components (Talend Jobs)
-* `jCategorie_FILE_ODS`: Master data ingestion for categories.
-* `jDepense_FILE_ODS`: Incremental loading of expense transactions.
-* `jFaitDepense_ODS_DWH`: Populating the Fact Table.
+
+## Entity-Relationship Diagram (ERD)
+
+```mermaid
+erDiagram
+    %% Fact Table
+    FAIT_DEPENSE {
+        VARCHAR(6) SK_DEPENSE PK
+        DATE SK_DATE FK
+        NUMBER SK_SOUS_CATEGORIE FK
+        NUMBER SK_DESCRIPTION FK
+        NUMBER(10_2) MONTANT_DEPENSE
+    }
+
+    %% Dimensions
+    DIM_TEMPS {
+        DATE date_calendar PK
+        INTEGER num_year
+        INTEGER num_month
+        VARCHAR lib_month
+        VARCHAR lib_quater
+    }
+
+    DIM_SOUS_CATEGORIE_DEPENSE {
+        NUMBER SK_SOUS_CATEGORIE PK
+        VARCHAR SOUS_CATEGORIE
+        VARCHAR CATEGORIE
+    }
+
+    DIM_DESCRIPTION_DEPENSE {
+        NUMBER SK_DESCRIPTION PK
+        VARCHAR DESCRIPTION_DEPENSE
+    }
+
+    %% Relationships
+    FAIT_DEPENSE }|..|| DIM_TEMPS : "occurs on"
+    FAIT_DEPENSE }|..|| DIM_SOUS_CATEGORIE_DEPENSE : "categorized as"
+    FAIT_DEPENSE }|..|| DIM_DESCRIPTION_DEPENSE : "described as"
 
 ### 1. Data Modeling (Snowflake)
 The database schema uses a **Star Schema** optimized for analytics.
